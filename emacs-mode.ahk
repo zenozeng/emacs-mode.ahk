@@ -51,10 +51,8 @@ OtherWindow()
 
 SwitchToTab()
 {
-    ; For Google Chrome (OmniTab)
-    Send ^l 
-    Send o
-    Send {SPACE}  
+    ; For Google Chrome (TabAhead)
+    Send !t
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -16,7 +16,7 @@ Emacs keybindings for Windows Applications using AutoHotKey.
 | Key | Description |
 |-----|-------------|
 | C-x k | Close current tab (C-w) |
-| C-x b | Search through tabs (C-l o) (Calling [OmniTab](https://chrome.google.com/webstore/detail/poegalffpegekkadabibgmjoinhahbbb)) |
+| C-x b | Search through tabs (Calling [TabAhead](https://chrome.google.com/webstore/detail/tab-ahead/naoajjeoiblmpegfelhkapanmmaaghmi)) |
 
 - ~~`C-s` Search Forward (F3)~~
 
