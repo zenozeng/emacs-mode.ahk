@@ -26,7 +26,8 @@ CxPressed = 0
 KillLine()
 {
     Send {SHIFT}+{END}
-    Send ^x 
+    Send ^c
+    Send {DEL}
 }
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -132,7 +133,6 @@ Return
 Return
 
 ^w::
-
     Send ^x
 Return
     
