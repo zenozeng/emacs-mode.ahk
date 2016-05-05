@@ -15,12 +15,21 @@ Emacs keybindings for Windows Applications using AutoHotKey.
 
 | Key | Description |
 |-----|-------------|
-| C-x k | Close current tab |
+| C-x k | Close current tab (C-w) |
 | C-x b | Search through tabs (C-l o) (Calling [OmniTab](https://chrome.google.com/webstore/detail/poegalffpegekkadabibgmjoinhahbbb)) |
 
 - ~~`C-s` Search Forward (F3)~~
 
 - ~~`C-r` Search Backward (Shift+F3)~~
+
+### Visual Studio Code
+
+| Key | Description |
+|-----|-------------|
+| C-x o | Switch focus to other tab (C-`) |
+| C-x 2 | Split window (C-\) |
+| C-x 3 | Split window (C-\) |
+| M-x | Show All Commands (F1) |
 
 
 ## FAQ
