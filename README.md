@@ -2,6 +2,19 @@
 
 Emacs keybindings for Windows Applications using AutoHotKey.
 
+## Keybindings
+
+### Common
+
+### Google Chrome
+
+- `C-x k`   Close current tab
+
+- ~~`C-s` Search Forward using F3~~
+
+- ~~`C-r` Search Backward using Shift+F3~~
+
+
 ## FAQ
 
 ### Caps Lock?
