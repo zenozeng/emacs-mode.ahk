@@ -9,8 +9,6 @@ SendMode InputThenPlay
 ; Note: Hotkeys using keyboard hook will not be triggered by Send
 #UseHook On
 
-Capslock::Ctrl
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Global Vars
@@ -58,17 +56,14 @@ OtherWindow()
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ^n::
-CapsLock & n::
     Send {Down}
 Return
     
 ^b::
-CapsLock & b::
     Send {Left}
 Return
 
 ^f::
-CapsLock & f::
     If cxPressed 
     {
         Send ^o
@@ -79,12 +74,10 @@ CapsLock & f::
 Return
 
 ^p::
-CapsLock & p::
     Send {Up}
 Return
     
 ^s::
-CapsLock & s::
     If cxPressed 
     {
         Send ^s
@@ -95,38 +88,31 @@ CapsLock & s::
 Return
     
 ^a::
-CapsLock & a::
     Send {HOME}
 Return
 
 ^e::
-CapsLock & e::
     Send {END}
 Return
     
 ^y::
-CapsLock & y::
     Send ^v
 Return
     
 ^x::
-CapsLock & x::
     CxPressed = 1
 Return
     
 ^/::
-CapsLock & /::
     Send ^z
 Return
     
 ^g::
-CapsLock & g::
     Send {ESC}
     global cxPressed = 0
 Return
     
 ^v::
-CapsLock & v::
     Send {PgDn}
 Return
     
@@ -140,17 +126,16 @@ Return
 Return
 
 ^w::
-CapsLock & w::
+
     Send ^x
 Return
     
 ^d::
-CapsLock & d::
     Send {Del}
 Return
     
 ^k::
-CapsLock & k::
+
     KillLine()
 Return    
     
