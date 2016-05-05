@@ -97,6 +97,11 @@ CapsLock & w::
     Send ^x
     Return
     
+^d::
+CapsLock & d::
+    Send {Del}
+    Return
+    
     
 #If CxPressed = 1
 
