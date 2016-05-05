@@ -9,19 +9,33 @@ SendMode InputThenPlay
 ; Note: Hotkeys using keyboard hook will not be triggered by Send
 #UseHook On
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;
-; Global Vars
-;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Capslock::Ctrl
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Global Vars
+;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 CxPressed = 0
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;
-; Keybindings
-;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Edit Functions
+;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+KillLine()
+{
+    Send {SHIFT}+{END}
+    Send ^x 
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Keybindings
+;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ^n::
 CapsLock & n::
@@ -35,7 +49,13 @@ Return
 
 ^f::
 CapsLock & f::
-    Send {Right}
+    If cxPressed 
+    {
+        Send ^o
+        global cxPressed = 0
+    }
+    Else
+        Send {Right}
 Return
 
 ^p::
@@ -45,7 +65,8 @@ Return
     
 ^s::
 CapsLock & s::
-    If cxPressed {
+    If cxPressed 
+    {
         Send ^s
         global cxPressed = 0
     }
@@ -81,6 +102,7 @@ Return
 ^g::
 CapsLock & g::
     Send {ESC}
+    global cxPressed = 0
 Return
     
 ^v::
@@ -101,6 +123,11 @@ Return
 CapsLock & d::
     Send {Del}
 Return
+    
+^k::
+CapsLock & k::
+    KillLine()
+Return    
     
 #If CxPressed = 1
 
