@@ -143,7 +143,11 @@ Return
 ^k::
     KillLine()
 Return    
-    
+
+^o::
+    Send {Enter}{Home}{Left}
+Return
+
 #If CxPressed = 1
 
 h::
