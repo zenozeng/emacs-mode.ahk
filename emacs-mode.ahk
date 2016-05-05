@@ -91,3 +91,18 @@ CapsLock & v::
 !v::
     Send {PgUp}
     Return
+
+^w::
+CapsLock & w::
+    Send ^x
+    Return
+    
+    
+#If CxPressed = 1
+
+h::
+    Send ^a
+    CxPressed = 0
+    Return
+
+#If
