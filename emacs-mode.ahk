@@ -82,3 +82,12 @@ CapsLock & /::
 CapsLock & g::
     Send {ESC}
     Return
+    
+^v::
+CapsLock & v::
+    Send {PgDn}
+    Return
+    
+!v::
+    Send {PgUp}
+    Return
