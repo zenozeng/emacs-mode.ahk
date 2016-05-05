@@ -26,22 +26,22 @@ CxPressed = 0
 ^n::
 CapsLock & n::
     Send {Down}
-    Return
+Return
     
 ^b::
 CapsLock & b::
     Send {Left}
-    Return
+Return
 
 ^f::
 CapsLock & f::
     Send {Right}
-    Return
+Return
 
 ^p::
 CapsLock & p::
     Send {Up}
-    Return
+Return
     
 ^s::
 CapsLock & s::
@@ -51,63 +51,62 @@ CapsLock & s::
     }
     Else
         Send ^f
-    Return
+Return
     
 ^a::
 CapsLock & a::
     Send {HOME}
-    Return
+Return
 
 ^e::
 CapsLock & e::
     Send {END}
-    Return
+Return
     
 ^y::
 CapsLock & y::
     Send ^v
-    Return
+Return
     
 ^x::
 CapsLock & x::
     CxPressed = 1
-    Return
+Return
     
 ^/::
 CapsLock & /::
     Send ^z
-    Return
+Return
     
 ^g::
 CapsLock & g::
     Send {ESC}
-    Return
+Return
     
 ^v::
 CapsLock & v::
     Send {PgDn}
-    Return
+Return
     
 !v::
     Send {PgUp}
-    Return
+Return
 
 ^w::
 CapsLock & w::
     Send ^x
-    Return
+Return
     
 ^d::
 CapsLock & d::
     Send {Del}
-    Return
-    
+Return
     
 #If CxPressed = 1
 
 h::
     Send ^a
     CxPressed = 0
-    Return
+Return
 
 #If
