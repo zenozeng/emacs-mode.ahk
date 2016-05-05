@@ -1,6 +1,6 @@
 # emacs-mode.ahk
 
-Provide limited emacs style keybindings
+Emacs keybindings for Windows Applications using AutoHotKey.
 
 ## FAQ
 
