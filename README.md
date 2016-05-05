@@ -6,13 +6,21 @@ Emacs keybindings for Windows Applications using AutoHotKey.
 
 ### Common
 
+| Key | Description |
+|-----|-------------|
+| C-s | Search (C-f) |
+| C-r | Search (C-f) |
+
 ### Google Chrome
 
-- `C-x k`   Close current tab
+| Key | Description |
+|-----|-------------|
+| C-x k | Close current tab |
+| C-x b | Search through tabs (C-l o) (Calling [OmniTab](https://chrome.google.com/webstore/detail/poegalffpegekkadabibgmjoinhahbbb)) |
 
-- ~~`C-s` Search Forward using F3~~
+- ~~`C-s` Search Forward (F3)~~
 
-- ~~`C-r` Search Backward using Shift+F3~~
+- ~~`C-r` Search Backward (Shift+F3)~~
 
 
 ## FAQ

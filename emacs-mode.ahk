@@ -49,6 +49,14 @@ OtherWindow()
     Send ^``  
 }
 
+SwitchToTab()
+{
+    ; For Google Chrome (OmniTab)
+    Send ^l 
+    Send o
+    Send {SPACE}  
+}
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Keybindings
@@ -135,7 +143,6 @@ Return
 Return
     
 ^k::
-
     KillLine()
 Return    
     
@@ -153,14 +160,22 @@ Return
 
 2::
     SplitWindow()
+    CxPressed = 0
 Return
 
 3::
     SplitWindow()
+    CxPressed = 0
 Return
 
 o::
     OtherWindow()
+    CxPressed = 0
+Return
+
+b::
+    SwitchToTab()
+    CxPressed = 0
 Return
 
 #If
