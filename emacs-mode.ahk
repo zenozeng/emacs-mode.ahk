@@ -45,7 +45,7 @@ SplitWindow()
 
 OtherWindow()
 {
-    ; For VS CodeC029
+    ; For VS Code
     ; Send ^`, note
     ; See also: https://autohotkey.com/boards/viewtopic.php?t=3590
     Send ^``  
@@ -132,6 +132,11 @@ Return
     
 !v::
     Send {PgUp}
+Return
+
+!x::
+    ; For VS Code
+    Send {F1}
 Return
 
 ^w::
