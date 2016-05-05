@@ -109,4 +109,9 @@ h::
     CxPressed = 0
 Return
 
+k::
+    Send ^w
+    CxPressed = 0
+Return
+
 #If
