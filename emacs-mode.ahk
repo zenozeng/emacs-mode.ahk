@@ -33,6 +33,26 @@ KillLine()
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
+;;; Window Functions
+;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+SplitWindow()
+{
+    ; For VS Code
+    Send ^\
+}
+
+OtherWindow()
+{
+    ; For VS CodeC029
+    ; Send ^`, note
+    ; See also: https://autohotkey.com/boards/viewtopic.php?t=3590
+    Send ^``  
+}
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
 ;;; Keybindings
 ;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -139,6 +159,18 @@ Return
 k::
     Send ^w
     CxPressed = 0
+Return
+
+2::
+    SplitWindow()
+Return
+
+3::
+    SplitWindow()
+Return
+
+o::
+    OtherWindow()
 Return
 
 #If
