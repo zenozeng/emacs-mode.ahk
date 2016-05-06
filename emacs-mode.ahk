@@ -9,6 +9,8 @@ SendMode InputThenPlay
 ; Note: Hotkeys using keyboard hook will not be triggered by Send
 #UseHook On
 
+#SingleInstance Force
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Global Vars
@@ -63,7 +65,10 @@ SwitchToTab()
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ^n::
-    Send {Down}
+    IfWinActive ahk_exe ONENOTE.EXE
+        Send ^{Down} ; workaround for Onenote 2016's Up/Down issue, ; See also: https://autohotkey.com/boards/viewtopic.php?t=8682
+    Else
+        Send {Down}
 Return
     
 ^b::
@@ -81,7 +86,10 @@ Return
 Return
 
 ^p::
-    Send {Up}
+    IfWinActive ahk_exe ONENOTE.EXE
+        Send ^{Up} ; workaround for Onenote 2016's Up/Down issue, ; See also: https://autohotkey.com/boards/viewtopic.php?t=8682
+    Else
+        Send {Up}
 Return
     
 ^s::
