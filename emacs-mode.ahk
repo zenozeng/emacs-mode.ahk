@@ -1,3 +1,7 @@
+; emacs-mode.ahk
+; Version: 0.1.0
+; License: GPLv2
+
 ; Set mode to SendInput, which is faster and more reliable than the default SendEvent mode. 
 ; Also, SendInput mode will buffer physical keyboard or mouse activity during the send, which avoids the mess.
 ; See also: 
