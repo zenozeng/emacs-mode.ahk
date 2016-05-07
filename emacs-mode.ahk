@@ -179,6 +179,7 @@ Return
     ; https://chrome.google.com/webstore/detail/ace-jump/dffnomheiaejjeadigfgnadlbfdbbhja/related?hl=zh-CN
     SPACE::
         Send !j
+        CcPressed = 0
     Return
     
 #If
