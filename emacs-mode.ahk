@@ -111,8 +111,18 @@ Return
         global cxPressed = 0
     }
     Else
-        Send ^f
+        IfWinActive ahk_exe chrome.exe
+            Send {F3}
+        Else
+            Send ^f
 Return
+
+^r::
+    IfWinActive ahk_exe chrome.exe
+        Send {SHIFT}+{F3}
+    Else
+        Send ^f
+ Return    
     
 ^a::
     Send {HOME}

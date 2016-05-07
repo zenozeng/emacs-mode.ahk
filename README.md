@@ -15,13 +15,11 @@ Emacs keybindings for Windows Applications using AutoHotKey.
 
 | Key | Description |
 |-----|-------------|
+| C-s | Search Forward (F3) |
+| C-r | Search Backward (Shift+F3) |
 | C-x k | Close current tab (C-w) |
 | C-x b | Search through tabs (Calling [TabAhead](https://chrome.google.com/webstore/detail/tab-ahead/naoajjeoiblmpegfelhkapanmmaaghmi)) |
 | C-c SPC | Ace Jump (Calling [ace-jump](https://chrome.google.com/webstore/detail/ace-jump/dffnomheiaejjeadigfgnadlbfdbbhja/related?hl=zh-CN))
-
-- ~~`C-s` Search Forward (F3)~~
-
-- ~~`C-r` Search Backward (Shift+F3)~~
 
 ### Visual Studio Code
 
