@@ -34,8 +34,8 @@ Emacs keybindings for Windows Applications using AutoHotKey.
 | Key | Description |
 |-----|-------------|
 | C-x o | Switch focus to other tab (C-`) |
-| C-x 2 | Split window (C-\) |
-| C-x 3 | Split window (C-\) |
+| C-x 2 | Split window (C-\\) |
+| C-x 3 | Split window (C-\\) |
 | M-x | Show All Commands (F1) |
 
 
