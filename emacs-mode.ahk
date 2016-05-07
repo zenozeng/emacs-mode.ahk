@@ -82,7 +82,13 @@ Return
 ^f::
     If cxPressed 
     {
-        Send ^o
+        IfWinActive ahk_exe explorer.exe
+            Send ^l
+        Else
+            IfWinActive ahk_exe chrome.exe
+                Send ^l
+            Else
+                Send ^o
         global cxPressed = 0
     }
     Else
