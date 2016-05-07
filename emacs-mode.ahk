@@ -23,6 +23,8 @@ SendMode InputThenPlay
 
 CxPressed = 0
 
+CcPressed = 0
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Edit Functions
@@ -127,6 +129,10 @@ Return
 ^x::
     CxPressed = 1
 Return
+
+^c::
+    CcPressed = 1
+Return
     
 ^/::
     Send ^z
@@ -134,7 +140,8 @@ Return
     
 ^g::
     Send {ESC}
-    global cxPressed = 0
+    CcPressed = 0
+    CxPressed = 0
 Return
     
 ^v::
@@ -160,42 +167,52 @@ Return
     
 ^k::
     KillLine()
-Return    
+Return
 
 ^o::
     Send {Enter}{Home}{Left}
 Return
 
+#If CcPressed = 1
+
+    ; Ace Jump for Chrome
+    ; https://chrome.google.com/webstore/detail/ace-jump/dffnomheiaejjeadigfgnadlbfdbbhja/related?hl=zh-CN
+    SPACE::
+        Send !j
+    Return
+    
+#If
+
 #If CxPressed = 1
 
-h::
-    Send ^a
-    CxPressed = 0
-Return
+    h::
+        Send ^a
+        CxPressed = 0
+    Return
 
-k::
-    Send ^w
-    CxPressed = 0
-Return
+    k::
+        Send ^w
+        CxPressed = 0
+    Return
 
-2::
-    SplitWindow()
-    CxPressed = 0
-Return
+    2::
+        SplitWindow()
+        CxPressed = 0
+    Return
 
-3::
-    SplitWindow()
-    CxPressed = 0
-Return
+    3::
+        SplitWindow()
+        CxPressed = 0
+    Return
 
-o::
-    OtherWindow()
-    CxPressed = 0
-Return
+    o::
+        OtherWindow()
+        CxPressed = 0
+    Return
 
-b::
-    SwitchToTab()
-    CxPressed = 0
-Return
+    b::
+        SwitchToTab()
+        CxPressed = 0
+    Return
 
 #If
