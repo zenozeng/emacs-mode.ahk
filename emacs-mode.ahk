@@ -118,10 +118,16 @@ Return
 Return
 
 ^r::
-    IfWinActive ahk_exe chrome.exe
-        Send {SHIFT}+{F3}
+    If cxPressed
+    {
+        Send ^r ; reload for chrome
+        cxPressed = 0
+    }
     Else
-        Send ^f
+        IfWinActive ahk_exe chrome.exe
+            Send {SHIFT}+{F3}
+        Else
+            Send ^f
  Return    
     
 ^a::
