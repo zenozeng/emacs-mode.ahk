@@ -146,8 +146,28 @@ Return
     CxPressed = 1
 Return
 
+!Backspace::
+    Send ^{Backspace}
+Return
+
+!d::
+    Send ^{Del}    
+Return
+
+!w::
+    Send ^c
+Return
+
+
+
 ^c::
-    CcPressed = 1
+    If CcPressed = 1
+    {
+        Send ^c
+        CcPressed = 0        
+    }
+    Else
+        CcPressed = 1
 Return
     
 ^/::
@@ -229,6 +249,13 @@ Return
 
     b::
         SwitchToTab()
+        CxPressed = 0
+    Return
+    
+    j::
+    ^j::
+        ; C-x C-j for Windows Explorer
+        Send {Alt Down}{Up}{Alt Up}
         CxPressed = 0
     Return
 
