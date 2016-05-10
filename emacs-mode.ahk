@@ -251,12 +251,5 @@ Return
         SwitchToTab()
         CxPressed = 0
     Return
-    
-    j::
-    ^j::
-        ; C-x C-j for Windows Explorer
-        Send {Alt Down}{Up}{Alt Up}
-        CxPressed = 0
-    Return
 
 #If
